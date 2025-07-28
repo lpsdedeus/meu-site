@@ -1,131 +1,147 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lista VIP Moda Fitness</title>
+  <title>Lista VIP de Moda Fitness</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: #fff;
       margin: 0;
       padding: 0;
       text-align: center;
-      background-color: #fdfdfd;
       color: #333;
     }
 
-    header {
-      background-color: #000;
-      color: #fff;
+    h1 {
+      background-color: #9c27b0;
+      color: white;
       padding: 20px;
+      font-size: 24px;
     }
 
-    .promo {
-      background-color: #fff5cc;
+    .aviso {
+      background-color: #ffe082;
       padding: 15px;
-      margin: 15px;
-      font-size: 22px;
+      font-size: 20px;
+      margin: 20px;
       border-radius: 10px;
-      display: inline-block;
     }
 
-    .promo strong {
-      color: green;
-    }
-
-    .pix-instructions {
-      background-color: #e0f7fa;
+    .modelo-imagem {
+      width: 100%;
+      max-width: 380px;
       margin: 20px auto;
-      padding: 20px;
-      max-width: 90%;
-      border-radius: 10px;
-      font-size: 18px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: block;
+      border-radius: 8px;
     }
 
-    .pix-key {
+    .texto-vip {
       font-weight: bold;
-      word-break: break-all;
-      margin-top: 10px;
-      color: #000;
+      color: #4caf50;
+      margin: 10px 0;
+      font-size: 18px;
     }
 
-    .whatsapp {
+    .pix-box {
+      background: #f1f1f1;
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    .pix-box h2 {
+      margin-top: 0;
+      color: #9c27b0;
+    }
+
+    .pix-box p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .pix-chave {
+      background: #fff;
+      padding: 10px;
+      border: 1px dashed #9c27b0;
+      word-wrap: break-word;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .btn-copiar {
+      background-color: #9c27b0;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .whatsapp-btn {
       background-color: #25d366;
       color: white;
-      font-size: 20px;
-      padding: 12px 25px;
-      text-decoration: none;
+      border: none;
+      padding: 15px 25px;
+      font-size: 18px;
       border-radius: 10px;
-      display: inline-block;
-      margin-top: 15px;
-    }
-
-    .models {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin: 20px;
-    }
-
-    .models img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    footer {
+      cursor: pointer;
       margin-top: 20px;
-      font-size: 14px;
     }
 
-    @media screen and (max-width: 768px) {
-      .promo {
-        font-size: 18px;
+    @media (max-width: 600px) {
+      .modelo-imagem {
+        max-width: 90%;
       }
-      .pix-instructions {
-        font-size: 16px;
+
+      h1 {
+        font-size: 20px;
       }
-      .whatsapp {
+
+      .aviso {
         font-size: 18px;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>💥 Acesso VIP Moda Fitness 💥</h1>
-    <p>Negocie direto com as fábricas e pague preços exclusivos!</p>
-  </header>
 
-  <div class="models">
-    <img src="modelo2.jpg" alt="Modelo 1" />
-    <img src="modelo1.jpg" alt="Modelo 2" />
-  </div>
+  <h1>Adquira a Lista VIP de Fabricantes e Lucre Muito Mais!</h1>
 
-  <div class="promo">
-    🎯 <strong>SÓ HOJE:</strong> de R$ 299,90 por apenas <strong>R$ 19,90</strong>
-  </div>
+  <p class="aviso">Negocie direto com as Fábricas — sem intermediários!</p>
 
-  <div class="pix-instructions">
-    <p>💸 <strong>Copie e pague com Pix Copia e Cola o valor promocional.</strong></p>
-    <p>📨 Depois clique no botão abaixo para enviar o comprovante e solicitar sua entrada na Lista VIP:</p>
-    <div class="pix-key">
+  <img src="modelo1.jpg" alt="Modelo Fitness 1" class="modelo-imagem">
+
+  <p class="texto-vip">Conjuntos a partir de <strong>R$ 29,90</strong> para quem comprou a lista VIP</p>
+
+  <img src="modelo2.jpg" alt="Modelo Fitness 2" class="modelo-imagem">
+
+  <div class="pix-box">
+    <h2>Pagamento via Pix</h2>
+    <p>Copie a chave Pix abaixo e pague o valor promocional de <strong>R$ 19,90</strong></p>
+    <div class="pix-chave" id="pixChave">
       00020126580014BR.GOV.BCB.PIX01360c818665-d78f-461e-9208-8c85b4626af3520400005303986540519.905802BR592520.679.226 LUCAS PEREIRA 6009SAO PAULO61080540900062240520z887bzLQkkhcgaYr85sf63043584
     </div>
+    <button class="btn-copiar" onclick="copiarChavePix()">📋 Copiar Chave Pix</button>
+
+    <p>Após o pagamento, clique no botão abaixo para enviar seu comprovante e solicitar o acesso à Lista VIP.</p>
+    <a href="https://wa.me/558197170302?text=Olá%2C%20segue%20comprovante%20Pix%20de%20R%24%2019%2C90%20para%20receber%20a%20Lista%20VIP%20de%20Fabricantes%20de%20Moda%20Fitness." target="_blank">
+      <button class="whatsapp-btn">📲 Enviar Comprovante no WhatsApp</button>
+    </a>
   </div>
 
-  <a
-    class="whatsapp"
-    href="https://wa.me/558197170302?text=Olá,%20acabei%20de%20fazer%20o%20pagamento%20via%20Pix%20e%20quero%20entrar%20na%20Lista%20VIP"
-    target="_blank"
-  >
-    📲 Enviar comprovante via WhatsApp
-  </a>
+  <script>
+    function copiarChavePix() {
+      const chave = document.getElementById("pixChave").innerText;
+      navigator.clipboard.writeText(chave).then(() => {
+        alert("Chave Pix copiada com sucesso!");
+      });
+    }
+  </script>
 
-  <footer>
-    <p>Exemplos reais disponíveis para clientes da lista — direto da fábrica!</p>
-  </footer>
 </body>
 </html>
